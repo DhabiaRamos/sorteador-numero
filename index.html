@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteador</title>
+</head>
+
+<body>
+    <div class="mask">
+
+    </div>
+
+    <main>
+        <img class="img-dado" src="./assets/dados.png" alt="">
+
+        <section class="sections-texts">
+
+            <h1>Sorteador</h1>
+            <p class="paragrafo">Sortear um número</p>
+
+        </section>
+
+        <section class="section-inputs">
+
+            <p class="paragrafo">entre</p>
+            <input class="input-numeroInicial" type="number" placeholder="1">
+
+            <p class="paragrafo">e</p>
+            <input class="input-numeroFinal" type="number" placeholder="100">
+
+        </section>
+
+        <section id="section-drawn-number">
+
+            <p class="paragrafo">Número sorteado:</p>
+            <p class="numSorteado">0</p>
+
+        </section>
+
+        <button class="btn-sortear" onclick="sortearNum()">Sortear agora</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

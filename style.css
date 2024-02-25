@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./assets/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.70) 0%, rgba(0,0,0,1) 100%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #F4F4ED;
+}
+
+
+.img-dado{
+    width: 280px;
+}
+
+
+/* Section do Título e Paragrafo */
+
+.sections-texts{
+    text-align: center;
+}
+
+
+.sections-texts h1{
+    color: #8093F1;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+
+.paragrafo{
+    color: #F4F4ED;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+
+/* Section dos inputs e paragrafos */
+
+.section-inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+
+input{
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+
+/* Section do número sorteado */
+
+
+#section-drawn-number{
+    display: none;
+    text-align: center;
+}
+
+.numSorteado{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #B388EB;
+}
+
+
+
+/* Botão de sortear */
+
+
+.btn-sortear{
+    width: 200px;
+    height: 30px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 2px;
+    background: #8093F1;
+    box-shadow: 4px 4px 5px #8093F132;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #E0EFDE;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.btn-sortear:hover{
+    transform:translateY(-4px)
+}
+
+.btn-sortear:active{
+    opacity: 0.5;
+}
