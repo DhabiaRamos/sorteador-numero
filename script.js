@@ -7,11 +7,17 @@ function sortearNum() {
     const inputMin = document.querySelector(".input-numeroInicial")
     const inputMax = document.querySelector(".input-numeroFinal")
 
-    let min = parseInt(inputMin.value)
-    let max = parseInt(inputMax.value)
+    if (inputMin.value.length == 0 || inputMax.value.length == 0) {
+        alert("Preencha os campos com números")
 
-    let gerarNum = Math.floor(Math.random() * (max - min + 1) + min)
+    } else {
 
-    sectionResul.style.display = "block"
-    pNumSorteado.textContent = `${gerarNum}`
+        let min = parseInt(inputMin.value)
+        let max = parseInt(inputMax.value)
+
+        let gerarNum = Math.floor(Math.random() * (max - min + 1) + min)
+
+        sectionResul.style.display = "block"
+        pNumSorteado.textContent = `${gerarNum}`
+    }
 }
