@@ -10,6 +10,9 @@ function sortearNum() {
     if (inputMin.value.length == 0 || inputMax.value.length == 0) {
         alert("Preencha os campos com números")
 
+    } else if (inputMin >= inputMax) {
+        alert("O primeiro valor tem que ser menor que o último valor!")
+
     } else {
 
         let min = parseInt(inputMin.value)
